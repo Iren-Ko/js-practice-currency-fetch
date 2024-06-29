@@ -1,0 +1,23 @@
+.currency__row {
+    padding: 10px 20px;
+    border: 1px solid #ccc;    
+}
+.currency__row + .currency__row {
+    border-top: 0;
+}
+.currency__row:not(:first-child), .currency__row:not(:last-child) {
+    border-radius: 0;
+}
+.currency__row:first-child {
+    border-radius: 5px 5px 0 0;
+}
+.currency__row:last-child {
+    border-radius: 0 0 5px 5px;
+}
+#usd::before {
+    content: '$: ';
+}
+
+#eur::before {
+    content: '€: ';
+}
